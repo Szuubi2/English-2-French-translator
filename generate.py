@@ -4,7 +4,6 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 from model import getTransformerModel
 from datasets import load_dataset
-from transformers import DataCollatorForSeq2Seq
 from transformers import AutoTokenizer
 
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
